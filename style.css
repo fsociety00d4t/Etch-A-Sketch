@@ -1,13 +1,129 @@
+body {
+    background-color:#002e3d;
+    
+}
+
+h1 {
+    color:pink;
+    position:absolute;
+    left:50%;
+    margin-top: 2%;
+    margin-bottom: 50px;
+  //  padding-bottom: 100px;
+     transform: translate(-50%, -50%);
+    font-family: cursive,sans-serif;
+    font-size: 50px;
+    letter-spacing: 5px;
+}
+
+
 #grid {
-    display:grid;
-    grid-template-columns: repeat(16,16);
-    background-color:red;
     width:500px;
     height:500px;
+    background-color:white;
+    display:grid;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%); 
+    border: 10px solid pink;
+    border-radius:5px;
 }
 
-.grid-elem {
-    border-style: dotted;
-    border-color: black;
-
+.grid-element {
+   // background-color:pink;
+    overflow: auto;
+    display:flex;
+    border:1px solid black;
 }
+
+
+.slider {
+    margin:20px;
+    width:30%;
+    position:absolute;
+    top:90%;
+    left:50%;
+    transform: translate(-50%, -50%); 
+    height:25px;
+    background-color:coral;
+    //opacity: 0.5;
+    
+}
+
+.slider:hover {
+    opacity:1;
+}
+
+
+.sliderInfo {
+    color:white;
+    position: absolute;
+    left:50%;
+    top:95%;
+}
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    cursor:pointer;
+}
+
+#btns-container {
+    top:50%;
+    left:10%;
+    transform: translate(-50%, -50%); 
+    position:absolute;
+    display:flex;
+    justify-content: center;
+    width:200px;
+    height:500px;
+    background-color: beige;
+    border-radius: 20px;
+    border: 5px solid #bebfa6; 
+}
+
+#btns{
+    font-family:cursive,sans-serif;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width:50%;
+}
+
+.btncss {    
+    font-family:cursive,sans-serif;
+    margin:10px;
+    background-color:antiquewhite;
+    border-radius: 20px;
+    margin:5px;
+}
+
+.btncss:hover {
+    cursor:pointer;
+}
+
+#colorpicker {
+    border-radius: 5px;
+    width:80%;
+}
+
+#colorpicker:hover {
+    cursor:pointer;
+}
+
+.text {
+   // color:white;
+    font-weight: bold;
+    position:absolute;
+    top:3%;
+    left:50%;
+    transform: translate(-50%, -50%); 
+    
+}
+
+#bgrdColorPicker {
+    display:none; 
+    position:absolute;
+    top:45%;
+    left:10%;
+}
+

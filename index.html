@@ -9,6 +9,26 @@
     <title>Etch-A-Sketch</title>
 </head>
 <body>
+    <h1>Etch A Sketch</h1>
     <div id="grid"></div>
+    
+    <div id="slide">
+    <input type="range" min="2" max="50" value="16" class="slider">
+        <p class="sliderInfo"></p>
+    </div>
+    
+    <div id = btns-container>
+    <div id="btns">
+        <span class="text">Pick a color</span>
+    <input type = "color" id = "colorpicker" class="btncss" value = "#000000">
+        
+    <button type ="button" id="rng" class="btncss">RNG color</button>
+    <button type ="button" id="bgrnd" class="btncss">Background color</button>
+    <button type = "button" id="erase" class="btncss">Eraser</button>
+    <button type = "button" id="clr" class="btncss">Clear</button>
+        
+        </div>
+    </div>
+      <input type = "color" id = "bgrdColorPicker" class="bgrdcolorPicker" value = "#ffffff">
 </body>
 </html>
